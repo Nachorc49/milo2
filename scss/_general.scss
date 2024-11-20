@@ -1,0 +1,30 @@
+h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    padding: 20px;
+}
+
+h2 {
+    font-family: 'Lucida Sans', sans-serif;
+    color: rgb(2, 34, 34);
+    text-align: center;
+    margin: 25px;
+}
+
+p, .rutina, section {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: gray;
+    margin: 40px;
+    text-align: justify;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 100px;
+}
