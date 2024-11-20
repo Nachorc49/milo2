@@ -39,6 +39,10 @@ p, .rutina, section {
   border-radius: 100px;
 }
 
+nav ul li a:focus {
+  outline: 2px solid rgba(20, 155, 78, 0.6588235294);
+}
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -65,7 +69,6 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  margin-bottom: 0;
 }
 
 .footer-content {
@@ -92,10 +95,12 @@ footer {
   text-decoration: underline;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  footer {
+    padding: 20px 10px;
+  }
   .footer-content {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
   }
 }
 .galeria {
@@ -115,6 +120,25 @@ footer {
   background-color: rgba(53, 172, 38, 0.081);
 }
 
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.galeria img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .btn-custom {
   color: #ffffff;
   background-color: rgba(20, 155, 78, 0.6588235294);
@@ -137,6 +161,65 @@ footer {
   background-color: rgba(20, 155, 78, 0.6588235294);
   color: #ffffff;
   border: 1px solid #ffffff;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: rgba(20, 155, 78, 0.6588235294);
+  transform: translateY(-5px); /* Sube ligeramente el texto */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+h1 {
+  animation: fadeIn 1s ease-out;
+}
+
+.btn-custom {
+  color: #ffffff;
+  background-color: rgba(20, 155, 78, 0.6588235294);
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.btn-custom:hover {
+  background-color: rgba(20, 155, 153, 0.9019607843);
+  color: #f1f1f1;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+footer {
+  animation: slideUp 1s ease-out;
 }
 
 /*# sourceMappingURL=style.css.map */

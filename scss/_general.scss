@@ -28,3 +28,7 @@ p, .rutina, section {
     overflow: hidden;
     border-radius: 100px;
 }
+
+nav ul li a:focus {
+    outline: 2px solid #149b4ea8; 
+}
