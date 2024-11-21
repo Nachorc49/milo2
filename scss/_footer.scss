@@ -32,12 +32,3 @@ footer {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    footer {
-        padding: 20px 10px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-    }
-}

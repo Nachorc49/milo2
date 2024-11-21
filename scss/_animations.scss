@@ -6,8 +6,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #149b4ea8;
-    transform: translateY(-5px); /* Sube ligeramente el texto */
+    color: #149b4f54;
+    transform: translateY(-5px);
 }
 
 @keyframes fadeIn {
@@ -58,3 +58,22 @@ h1 {
 footer {
     animation: slideUp 1s ease-out;
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  

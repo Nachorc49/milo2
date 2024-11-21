@@ -3,18 +3,17 @@
     background-color: #149b4ea8;
     padding: 8px 15px;
     border-radius: 5px;
-    margin: 0 5px;
     text-transform: uppercase;
     font-weight: bold;
-    transition: all 0.3s ease;
     display: inline-block;
-}
-
-.btn-custom:hover {
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+  }
+  
+  .btn-custom:hover {
     background-color: #149b99e6;
-    color: #f1f1f1;
-    text-decoration: none;
-}
+    transform: scale(1.05); 
+  }
+  
 
 .nav-link.active.btn-custom {
     background-color: #149b4ea8;
