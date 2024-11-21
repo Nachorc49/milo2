@@ -18,7 +18,7 @@
     }
   
     .navbar-toggler {
-      margin: 0 auto; // Centrar el botón hamburguesa
+      margin: 0 auto; 
     }
   }
   
@@ -35,7 +35,7 @@
   @media (max-width: 768px) {
     footer {
       padding: 20px 10px;
-      position: fixed; /* Fijar al final */
+      position: fixed;
       bottom: 0;
       width: 100%;
     }
@@ -50,11 +50,11 @@
     .galeria {
       flex-direction: column;
       align-items: center;
-      gap: 10px; /* Espaciado entre los elementos */
+      gap: 10px;
     }
   
     .galeria img {
-      max-width: 90%; /* Asegurar que las imágenes no sean demasiado grandes */
+      max-width: 90%;
       height: auto;
     }
   }
